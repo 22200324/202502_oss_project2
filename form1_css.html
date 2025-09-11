@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=date],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        input[type=date]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #2196f3;
+            outline: none;
+        }
+
+        .radio-group,
+        .checkbox-group {
+
+            margin: 8px 0;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            background-color: #2196f3;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover {
+            background-color: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>회원가입 form</h1>
+    <form action="#" method="get">
+        <label for="userid">아이디: </label>
+        <input type="text" id="userid" name="userid" placeholder="아이디입력"><Br><Br>
+        <label for="pw">비밀번호: </label>
+        <input type="password" id="pw" name="pw" placeholder="비밀번호입력">
+
+        <p>성별 선택</p>
+        <label><input type="radio" id="male" name="gender" value="male">남성</label>
+        <label><input type="radio" id="female" name="gender" value="female">여성</label>
+        
+        <p>관심 분야(중복선택가능):</p>
+        <label><input type="checkbox" name="interest" value="web"> 웹 개발</label>
+        <label><input type="checkbox" name="interest" value="ai"> 인공지능</label>
+        <label><input type="checkbox" name="interest" value="game"> 게임</label>
+
+
+
+        <label for="birth">생년월일:</label>
+        <input type="date" id="birth" name="birth"><br><Br>
+
+
+        <label for="job"> 직업:</label>
+        <select id="job" name="job">
+            <option value="student">학생</option>
+            <option value="developer">개발자</option>
+            <option value="designer">디자이너</option>
+            <option value="etc">기타</option>
+
+        </select><br><br>
+
+        <label for="intro">자기소개: </label> <br>
+        <textarea id="intro" name="intro" rows="4" cols="40" placeholder="간단한 자기소개를 작성하세요"></textarea><br><Br>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
